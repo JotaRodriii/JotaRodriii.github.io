@@ -448,7 +448,7 @@
       const timer = timers[timerId];
       if (!timer) return;
       clearInterval(timer.interval);
-      timer.countdownElem.textContent = "Time's up!";
+      timer.countdownElem.textContent = "Se acabo!";
       timer.countdownElem.style.color = "#FF0000";
       timer.progressFill.style.backgroundColor = "#FF0000";
       timer.progressFill.style.width = "0%";
@@ -548,7 +548,7 @@
 
     function updateCountdownAppearance(timer) {
       if (timer.remainingSeconds <= 0) {
-        timer.countdownElem.textContent = "Time's up!";
+        timer.countdownElem.textContent = "Se acabo!";
         timer.countdownElem.style.color = "#FF0000";
         return;
       }
